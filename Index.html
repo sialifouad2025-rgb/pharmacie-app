@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Application de gestion financière pour Pharmacie Ben Hamida">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💊</text></svg>">
+    <title>Pharmacie Ben Hamida - Gestion Financière</title>
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=BL1pyugudb_JDNqqpgpnjpd97QVJq5HMJ3dcY_CWqsI4sZXmUSrpozBSxcCEvFHlFJnjdqNGX254p6R9SP4XgiU2bYaP1JrjtsqDP7U4PNrATDM_QvuVjE6MDhyiFYtHe05IEhE2VlGQMDtw7IlZhBSkjdgt9PjEMhqdZhOov6ySdV0fK0fNdIDNnXvDWncn0d2BidkzLlxfcu6VPmvomW5yEHY4ZD3AkBu3uuGbO5UQkyfD13FK038MOahCHqXeBBDqLfi8BULrp3KbG8Sqe7u6oGX46PCi6eGYG75gMmMf7KljScJ-OrtxvO_p8WCgpUg56gupx41qy9uCUvIstThH2z4bblCHDJPnbN9GqP-vrx62F4DkZybwj4Bvr-8RgkjGx5LaozZITyzr6JQHVGfztQd9JWVzcfNiInK7zy5Fo_lS2itWI4eN16VCaLlZvczd5qBGF7IBdwI9yh9Yqa4xq8O_VjbNsMd6ugMzjagGcdYKTw4_GnON_VHsWq_wPCihmVuiD0gxEzNvJOu5LI5ruR6F8f1zXcGY0CyvWw_JFqQwHLZdHx-sRXWNCLEqOuwnlkDS1zE_FSQPLck3rKVpXsSO7AA65Gq6ouIwcF2kzD-qdNoXFqso9YmUYFJGdbSmVbNJGZI9oXcm5g2T20P2h46p7k9_uemgfOWsaaR5KP341L5OMA8eRQCfnJ4wtoviCcyQtDZRg3UKxVxYE4SLBMhzuA-F7y4DFGiNR1uq2IMZSJirLZ_rBGsV7ToaMrtAbJE9anVOE0Pcn9kXvbIawHjfjntllmvupf-h_rWPmDaOS8WwsGl8P0NmXLifKvdyfXACE1FD2LijUlB17mhqPcWouu-rLsBdt9Wlzk36KV_pOoz7-37DPVN5VQ8z7S9_K3oG8q8_xKnX_Fo-dfjHvC3h_htz5XhNih6LvSJt3q_hyNk_V9h127STV1wnXMpYbURH7Nf73FCe4cATIxBO3Oxrik30IIL8Fm7BeixZmzv_JJnwPECykgr-o4iypjtGsu6gnFAnNbXdqgkwtPn0dFSoSWmLxzRRuT5ZyVHnwnIa8UfTF-uEv1mLsO1s4ubjfLAKkiY4dpy_zi4v_sPxvZCpHFFms2RiUEzCLJh9HCf8lk5qo3FzJEWjLRYqOd4KnDqMJ71NR8rnocIUSeGf9e0yZP_1wnrRB3kvKDbWl7ZMD_Mn70S8LobMn7ucudgyqKGTwrc3lOEriNBvlIY1RgkgLDBmW0zCdrVD5UVSuaBpYNGba8_zIOVIlyTqxYqckPt_iK5-DMUMmiZySrfBbgSm56_7v-zKEVECvuoCV-28QjAntb_FoxukLqDOom6yEhlaJ4XLjuwBnolDV2MzFgevS9U2RKub2DuJrC4mm1Yp4CKpavOhyFQVz99vHiu_5SRfFyMgd-Wos_fcDyjeYpCeRN-_gEj7ZLPSrVvE81Jwm_n_5OGFNliEHwOeOZvt0g8eLTzWkvXjjOCFF3GkgvCXcHEn8ZdH4wEqYg1DtrnN4Vfn2qGaP4kocTpKWfqorHyuNxsE1RDt80EgqmSA1udcikqjltrMipsVaEpMZrL-5Xt-dOebdcttECby7yf5VRRPaAHzC8LOXwgE3EFWUMXJBh-w2LJODR6pjl1Q_NiWu1RXWXHHw0yoZMDAB0PB2NtR8QLjgjE5ACG1cEqMN5a1YJCpxbWhsBsXnnUWpoeA703fQOM0YVMmAPjR21_FvxtszdM7HEvt81sBjzCIbrIJTkaOFUCbbF49V9_WC1kL98N1ZAW42fPmaD1VTe97iTZPzCfZmVfeX6AAfVKvijybde2oNLAD1_8JByd7ZHsVSFqfd_4FHtaiIyImg6jdvlyNg7CYyMYsTr3o3ycoy0NzGzgUEKwkl7QiRDJ3RY0vALnLXZ8niIz5h6Hr80sD2FszV1dafy2LcGZFjqsL_7KqTDVS1Jlxksvtxqvt1pj7-V61jP0_KKM2EE33b2c2kKTXmORU0NRbY-drlsqFrulHx1oPzzs3TS2HaqoNF5VnauZLKA1xUpcstJkA1Z1sNWtRwR1iN0BP799flOmwfYIa14MVvwTEcvozjxyOQDu8GfzpGak1bv6DBvMpmmy_HXg3_goZMfLNrMyVwU0iqk4eip6i0_NPoIXHVysaifOjNUSdsh79-w2HJooC3-1o2LGbSryQ5B7S-IpU_cj4MKDnAIqcXDefCGUd7ucKxetpE6W19j63fQfvG4PjzZOMbd6A0iPLIED4_74KDkFfgq3s7JTxSNlWfx-GuEQ" charset="UTF-8"></script><style>
+        :root {
+            --color-primary: #2563eb;
+            --color-primary-hover: #1d4ed8;
+            --color-success: #10b981;
+            --color-danger: #ef4444;
+            --color-warning: #f59e0b;
+            --color-bg: #f8fafc;
+            --color-surface: #ffffff;
+            --color-text: #1e293b;
+            --color-text-secondary: #64748b;
+            --color-border: #e2e8f0;
+            --color-shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            padding-bottom: 80px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, #1e40af 100%);
+            color: white;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px var(--color-shadow);
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+
+        .date-selector {
+            background: var(--color-surface);
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px var(--color-shadow);
+        }
+
+        .date-selector label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--color-text-secondary);
+        }
+
+        .date-selector input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--color-border);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .date-selector input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            padding: 0 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .summary-card {
+            background: var(--color-surface);
+            padding: 1.25rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px var(--color-shadow);
+            text-align: center;
+        }
+
+        .summary-card.revenue {
+            border-left: 4px solid var(--color-success);
+        }
+
+        .summary-card.expense {
+            border-left: 4px solid var(--color-danger);
+        }
+
+        .summary-card.balance {
+            border-left: 4px solid var(--color-primary);
+        }
+
+        .summary-card h3 {
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .summary-card .amount {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .summary-card.revenue .amount {
+            color: var(--color-success);
+        }
+
+        .summary-card.expense .amount {
+            color: var(--color-danger);
+        }
+
+        .summary-card.balance .amount {
+            color: var(--color-primary);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 0.5rem;
+            padding: 0 1rem;
+            margin-bottom: 1rem;
+            overflow-x: auto;
+        }
+
+        .tab {
+            flex: 1;
+            min-width: 120px;
+            padding: 0.75rem 1rem;
+            background: var(--color-surface);
+            border: 2px solid var(--color-border);
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .tab.active {
+            background: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+        }
+
+        .section {
+            background: var(--color-surface);
+            margin: 0 1rem 1rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px var(--color-shadow);
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .section h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-text);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--color-text);
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--color-border);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 0.875rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--color-primary-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-success {
+            background: var(--color-success);
+            color: white;
+        }
+
+        .btn-danger {
+            background: var(--color-danger);
+            color: white;
+        }
+
+        .transactions-list {
+            margin-top: 1.5rem;
+        }
+
+        .transaction-item {
+            background: var(--color-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 4px solid;
+        }
+
+        .transaction-item.revenue {
+            border-left-color: var(--color-success);
+        }
+
+        .transaction-item.expense {
+            border-left-color: var(--color-danger);
+        }
+
+        .transaction-info {
+            flex: 1;
+        }
+
+        .transaction-category {
+            font-size: 0.75rem;
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.25rem;
+        }
+
+        .transaction-description {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .transaction-date {
+            font-size: 0.75rem;
+            color: var(--color-text-secondary);
+        }
+
+        .transaction-amount {
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-align: right;
+        }
+
+        .transaction-amount.revenue {
+            color: var(--color-success);
+        }
+
+        .transaction-amount.expense {
+            color: var(--color-danger);
+        }
+
+        .delete-btn {
+            background: transparent;
+            border: none;
+            color: var(--color-danger);
+            cursor: pointer;
+            padding: 0.5rem;
+            margin-left: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .report-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .report-section h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+            border-bottom: 2px solid var(--color-border);
+            padding-bottom: 0.5rem;
+        }
+
+        .report-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .report-item:last-child {
+            border-bottom: none;
+        }
+
+        .report-label {
+            color: var(--color-text-secondary);
+        }
+
+        .report-value {
+            font-weight: 600;
+        }
+
+        .report-total {
+            background: var(--color-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .report-total strong {
+            font-size: 1.125rem;
+        }
+
+        .report-total .amount {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--color-text-secondary);
+        }
+
+        .empty-state p {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg: #0f172a;
+                --color-surface: #1e293b;
+                --color-text: #f1f5f9;
+                --color-text-secondary: #94a3b8;
+                --color-border: #334155;
+                --color-shadow: rgba(0, 0, 0, 0.3);
+            }
+
+            .transaction-item {
+                background: #0f172a;
+            }
+
+            .report-total {
+                background: #0f172a;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>💊 Pharmacie Ben Hamida</h1>
+        <p>Gestion financière quotidienne</p>
+    </div>
+
+    <div class="date-selector">
+        <label for="selectedDate">Date sélectionnée</label>
+        <input type="date" id="selectedDate">
+    </div>
+
+    <div class="summary-cards">
+        <div class="summary-card revenue">
+            <h3>Recettes</h3>
+            <div class="amount" id="totalRevenue">0 DA</div>
+        </div>
+        <div class="summary-card expense">
+            <h3>Dépenses</h3>
+            <div class="amount" id="totalExpense">0 DA</div>
+        </div>
+        <div class="summary-card balance">
+            <h3>Solde</h3>
+            <div class="amount" id="balance">0 DA</div>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <button class="tab active" data-tab="revenues">Recettes</button>
+        <button class="tab" data-tab="expenses">Dépenses</button>
+        <button class="tab" data-tab="report">Rapport Jour</button>
+        <button class="tab" data-tab="monthlyReport">Rapport Mois</button>
+    </div>
+
+    <div id="revenues" class="section active">
+        <h2>➕ Ajouter une recette</h2>
+        <form id="revenueForm">
+            <div class="form-group">
+                <label for="revenueCategory">Catégorie</label>
+                <select id="revenueCategory" required>
+                    <option value="">Sélectionner...</option>
+                    <option value="ventes">Ventes de médicaments</option>
+                    <option value="cnas">Sécurité sociale (CNAS)</option>
+                    <option value="casnos">CASNOS</option>
+                    <option value="militaire">Assurance militaire</option>
+                    <option value="consultation">Consultations</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="revenueDescription">Description</label>
+                <input type="text" id="revenueDescription" placeholder="Ex: Ventes du matin" required>
+            </div>
+            <div class="form-group">
+                <label for="revenueAmount">Montant (DA)</label>
+                <input type="number" id="revenueAmount" placeholder="0.00" step="0.01" required>
+            </div>
+            <button type="submit" class="btn btn-success">Ajouter la recette</button>
+        </form>
+        <div class="transactions-list" id="revenuesList"></div>
+    </div>
+
+    <div id="expenses" class="section">
+        <h2>➖ Ajouter une dépense</h2>
+        <form id="expenseForm">
+            <div class="form-group">
+                <label for="expenseCategory">Catégorie</label>
+                <select id="expenseCategory" required>
+                    <option value="">Sélectionner...</option>
+                    <option value="loyer">Loyer</option>
+                    <option value="salaires">Salaires du personnel</option>
+                    <option value="electricite">Électricité</option>
+                    <option value="eau">Eau</option>
+                    <option value="internet">Internet & Téléphone</option>
+                    <option value="achats">Achats de stock</option>
+                    <option value="fournisseurs">Factures fournisseurs</option>
+                    <option value="maintenance">Maintenance & Réparations</option>
+                    <option value="assurance">Assurance</option>
+                    <option value="transport">Transport & Livraison</option>
+                    <option value="taxes">Taxes & Impôts</option>
+                    <option value="materiel">Matériel & Équipement</option>
+                    <option value="publicite">Publicité & Marketing</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="expenseDescription">Description</label>
+                <input type="text" id="expenseDescription" placeholder="Ex: Loyer du mois" required>
+            </div>
+            <div class="form-group">
+                <label for="expenseAmount">Montant (DA)</label>
+                <input type="number" id="expenseAmount" placeholder="0.00" step="0.01" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Ajouter la dépense</button>
+        </form>
+        <div class="transactions-list" id="expensesList"></div>
+    </div>
+
+    <div id="report" class="section">
+        <h2>📊 Rapport quotidien</h2>
+        
+        <div class="report-section">
+            <h3>Recettes par catégorie</h3>
+            <div id="revenueBreakdown"></div>
+        </div>
+
+        <div class="report-section">
+            <h3>Dépenses par catégorie</h3>
+            <div id="expenseBreakdown"></div>
+        </div>
+
+        <div class="report-total">
+            <strong>Résultat net du jour:</strong>
+            <span class="amount" id="netResult">0 DA</span>
+        </div>
+
+        <button class="btn btn-primary" id="exportReport" style="margin-top: 1.5rem;">
+            📄 Exporter le rapport
+        </button>
+    </div>
+
+    <div id="monthlyReport" class="section">
+        <h2>📅 Rapport mensuel</h2>
+        
+        <div class="form-group">
+            <label for="selectedMonth">Mois</label>
+            <input type="month" id="selectedMonth">
+        </div>
+
+        <div class="summary-cards" style="margin: 1.5rem 0;">
+            <div class="summary-card revenue">
+                <h3>Recettes</h3>
+                <div class="amount" id="monthlyRevenue">0 DA</div>
+            </div>
+            <div class="summary-card expense">
+                <h3>Dépenses</h3>
+                <div class="amount" id="monthlyExpense">0 DA</div>
+            </div>
+            <div class="summary-card balance">
+                <h3>Solde</h3>
+                <div class="amount" id="monthlyBalance">0 DA</div>
+            </div>
+        </div>
+
+        <div class="report-section">
+            <h3>Recettes mensuelles par catégorie</h3>
+            <div id="monthlyRevenueBreakdown"></div>
+        </div>
+
+        <div class="report-section">
+            <h3>Dépenses mensuelles par catégorie</h3>
+            <div id="monthlyExpenseBreakdown"></div>
+        </div>
+
+        <div class="report-section">
+            <h3>Évolution journalière</h3>
+            <div id="dailyEvolution"></div>
+        </div>
+
+        <button class="btn btn-primary" id="exportMonthlyReport" style="margin-top: 1.5rem;">
+            📄 Exporter le rapport mensuel
+        </button>
+    </div>
+
+    <script>
+        let transactions = JSON.parse(localStorage.getItem('pharmacieTransactions') || '[]');
+        let selectedDate = new Date().toISOString().split('T')[0];
+        let selectedMonth = new Date().toISOString().slice(0, 7);
+
+        const categoryLabels = {
+            ventes: 'Ventes de médicaments',
+            cnas: 'Sécurité sociale (CNAS)',
+            casnos: 'CASNOS',
+            militaire: 'Assurance militaire',
+            consultation: 'Consultations',
+            loyer: 'Loyer',
+            salaires: 'Salaires du personnel',
+            electricite: 'Électricité',
+            eau: 'Eau',
+            internet: 'Internet & Téléphone',
+            achats: 'Achats de stock',
+            fournisseurs: 'Factures fournisseurs',
+            maintenance: 'Maintenance & Réparations',
+            assurance: 'Assurance',
+            transport: 'Transport & Livraison',
+            taxes: 'Taxes & Impôts',
+            materiel: 'Matériel & Équipement',
+            publicite: 'Publicité & Marketing',
+            autre: 'Autre'
+        };
+
+        document.getElementById('selectedDate').value = selectedDate;
+        document.getElementById('selectedMonth').value = selectedMonth;
+
+        document.getElementById('selectedDate').addEventListener('change', (e) => {
+            selectedDate = e.target.value;
+            updateDisplay();
+        });
+
+        document.getElementById('selectedMonth').addEventListener('change', (e) => {
+            selectedMonth = e.target.value;
+            generateMonthlyReport();
+        });
+
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+                if (tab.dataset.tab === 'report') {
+                    generateReport();
+                } else if (tab.dataset.tab === 'monthlyReport') {
+                    generateMonthlyReport();
+                }
+            });
+        });
+
+        document.getElementById('revenueForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const transaction = {
+                id: Date.now(),
+                type: 'revenue',
+                category: document.getElementById('revenueCategory').value,
+                description: document.getElementById('revenueDescription').value,
+                amount: parseFloat(document.getElementById('revenueAmount').value),
+                date: selectedDate,
+                timestamp: new Date().toISOString()
+            };
+            transactions.push(transaction);
+            saveTransactions();
+            e.target.reset();
+            updateDisplay();
+        });
+
+        document.getElementById('expenseForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const transaction = {
+                id: Date.now(),
+                type: 'expense',
+                category: document.getElementById('expenseCategory').value,
+                description: document.getElementById('expenseDescription').value,
+                amount: parseFloat(document.getElementById('expenseAmount').value),
+                date: selectedDate,
+                timestamp: new Date().toISOString()
+            };
+            transactions.push(transaction);
+            e.target.reset();
+            updateDisplay();
+        });
+
+        function deleteTransaction(id) {
+            transactions = transactions.filter(t => t.id !== id);
+            saveTransactions();
+            updateDisplay();
+        }
+
+        function saveTransactions() {
+            localStorage.setItem('pharmacieTransactions', JSON.stringify(transactions));
+        }
+
+        function updateDisplay() {
+            const dayTransactions = transactions.filter(t => t.date === selectedDate);
+            
+            const totalRevenue = dayTransactions
+                .filter(t => t.type === 'revenue')
+                .reduce((sum, t) => sum + t.amount, 0);
+            
+            const totalExpense = dayTransactions
+                .filter(t => t.type === 'expense')
+                .reduce((sum, t) => sum + t.amount, 0);
+            
+            const balance = totalRevenue - totalExpense;
+
+            document.getElementById('totalRevenue').textContent = formatAmount(totalRevenue);
+            document.getElementById('totalExpense').textContent = formatAmount(totalExpense);
+            document.getElementById('balance').textContent = formatAmount(balance);
+
+            displayTransactions('revenues', dayTransactions.filter(t => t.type === 'revenue'));
+            displayTransactions('expenses', dayTransactions.filter(t => t.type === 'expense'));
+        }
+
+        function displayTransactions(type, items) {
+            const container = document.getElementById(type === 'revenues' ? 'revenuesList' : 'expensesList');
+            
+            if (items.length === 0) {
+                container.innerHTML = '<div class="empty-state"><p>Aucune transaction pour cette date</p></div>';
+                return;
+            }
+
+            container.innerHTML = items.map(item => `
+                <div class="transaction-item ${item.type}">
+                    <div class="transaction-info">
+                        <div class="transaction-category">${categoryLabels[item.category]}</div>
+                        <div class="transaction-description">${item.description}</div>
+                        <div class="transaction-date">${formatDate(item.timestamp)}</div>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <div class="transaction-amount ${item.type}">${formatAmount(item.amount)}</div>
+                        <button class="delete-btn" onclick="deleteTransaction(${item.id})">🗑️</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function generateReport() {
+            const dayTransactions = transactions.filter(t => t.date === selectedDate);
+            
+            const revenueByCategory = {};
+            const expenseByCategory = {};
+
+            dayTransactions.forEach(t => {
+                if (t.type === 'revenue') {
+                    revenueByCategory[t.category] = (revenueByCategory[t.category] || 0) + t.amount;
+                } else {
+                    expenseByCategory[t.category] = (expenseByCategory[t.category] || 0) + t.amount;
+                }
+            });
+
+            document.getElementById('revenueBreakdown').innerHTML = Object.keys(revenueByCategory).length > 0
+                ? Object.entries(revenueByCategory).map(([cat, amount]) => `
+                    <div class="report-item">
+                        <span class="report-label">${categoryLabels[cat]}</span>
+                        <span class="report-value">${formatAmount(amount)}</span>
+                    </div>
+                `).join('') + `
+                    <div class="report-total">
+                        <strong>Total Recettes:</strong>
+                        <span class="amount" style="color: var(--color-success);">${formatAmount(Object.values(revenueByCategory).reduce((a, b) => a + b, 0))}</span>
+                    </div>
+                `
+                : '<div class="empty-state"><p>Aucune recette</p></div>';
+
+            document.getElementById('expenseBreakdown').innerHTML = Object.keys(expenseByCategory).length > 0
+                ? Object.entries(expenseByCategory).map(([cat, amount]) => `
+                    <div class="report-item">
+                        <span class="report-label">${categoryLabels[cat]}</span>
+                        <span class="report-value">${formatAmount(amount)}</span>
+                    </div>
+                `).join('') + `
+                    <div class="report-total">
+                        <strong>Total Dépenses:</strong>
+                        <span class="amount" style="color: var(--color-danger);">${formatAmount(Object.values(expenseByCategory).reduce((a, b) => a + b, 0))}</span>
+                    </div>
+                `
+                : '<div class="empty-state"><p>Aucune dépense</p></div>';
+
+            const totalRevenue = Object.values(revenueByCategory).reduce((a, b) => a + b, 0);
+            const totalExpense = Object.values(expenseByCategory).reduce((a, b) => a + b, 0);
+            const netResult = totalRevenue - totalExpense;
+
+            const netResultEl = document.getElementById('netResult');
+            netResultEl.textContent = formatAmount(netResult);
+            netResultEl.style.color = netResult >= 0 ? 'var(--color-success)' : 'var(--color-danger)';
+        }
+
+        document.getElementById('exportReport').addEventListener('click', () => {
+            const dayTransactions = transactions.filter(t => t.date === selectedDate);
+            
+            let report = `PHARMACIE BEN HAMIDA\nRAPPORT QUOTIDIEN\nDate: ${formatDateFull(selectedDate)}\n\n`;
+            report += '=' .repeat(50) + '\n\n';
+            
+            report += 'RECETTES\n' + '-'.repeat(50) + '\n';
+            const revenues = dayTransactions.filter(t => t.type === 'revenue');
+            if (revenues.length > 0) {
+                revenues.forEach(t => {
+                    report += `${categoryLabels[t.category]}: ${formatAmount(t.amount)}\n`;
+                    report += `  ${t.description}\n`;
+                });
+                const totalRev = revenues.reduce((sum, t) => sum + t.amount, 0);
+                report += `\nTOTAL RECETTES: ${formatAmount(totalRev)}\n\n`;
+            } else {
+                report += 'Aucune recette\n\n';
+            }
+
+            report += 'DÉPENSES\n' + '-'.repeat(50) + '\n';
+            const expenses = dayTransactions.filter(t => t.type === 'expense');
+            if (expenses.length > 0) {
+                expenses.forEach(t => {
+                    report += `${categoryLabels[t.category]}: ${formatAmount(t.amount)}\n`;
+                    report += `  ${t.description}\n`;
+                });
+                const totalExp = expenses.reduce((sum, t) => sum + t.amount, 0);
+                report += `\nTOTAL DÉPENSES: ${formatAmount(totalExp)}\n\n`;
+            } else {
+                report += 'Aucune dépense\n\n';
+            }
+
+            const totalRevenue = revenues.reduce((sum, t) => sum + t.amount, 0);
+            const totalExpense = expenses.reduce((sum, t) => sum + t.amount, 0);
+            const net = totalRevenue - totalExpense;
+
+            report += '=' .repeat(50) + '\n';
+            report += `RÉSULTAT NET: ${formatAmount(net)}\n`;
+            report += '=' .repeat(50) + '\n';
+
+            const blob = new Blob([report], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Rapport_${selectedDate}_Pharmacie_Ben_Hamida.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+
+        function generateMonthlyReport() {
+            const monthTransactions = transactions.filter(t => t.date.startsWith(selectedMonth));
+            
+            const revenueByCategory = {};
+            const expenseByCategory = {};
+            const dailyTotals = {};
+
+            monthTransactions.forEach(t => {
+                if (t.type === 'revenue') {
+                    revenueByCategory[t.category] = (revenueByCategory[t.category] || 0) + t.amount;
+                } else {
+                    expenseByCategory[t.category] = (expenseByCategory[t.category] || 0) + t.amount;
+                }
+
+                if (!dailyTotals[t.date]) {
+                    dailyTotals[t.date] = { revenue: 0, expense: 0 };
+                }
+                if (t.type === 'revenue') {
+                    dailyTotals[t.date].revenue += t.amount;
+                } else {
+                    dailyTotals[t.date].expense += t.amount;
+                }
+            });
+
+            const totalRevenue = Object.values(revenueByCategory).reduce((a, b) => a + b, 0);
+            const totalExpense = Object.values(expenseByCategory).reduce((a, b) => a + b, 0);
+            const balance = totalRevenue - totalExpense;
+
+            document.getElementById('monthlyRevenue').textContent = formatAmount(totalRevenue);
+            document.getElementById('monthlyExpense').textContent = formatAmount(totalExpense);
+            document.getElementById('monthlyBalance').textContent = formatAmount(balance);
+
+            document.getElementById('monthlyRevenueBreakdown').innerHTML = Object.keys(revenueByCategory).length > 0
+                ? Object.entries(revenueByCategory).map(([cat, amount]) => `
+                    <div class="report-item">
+                        <span class="report-label">${categoryLabels[cat]}</span>
+                        <span class="report-value">${formatAmount(amount)}</span>
+                    </div>
+                `).join('') + `
+                    <div class="report-total">
+                        <strong>Total Recettes:</strong>
+                        <span class="amount" style="color: var(--color-success);">${formatAmount(totalRevenue)}</span>
+                    </div>
+                `
+                : '<div class="empty-state"><p>Aucune recette</p></div>';
+
+            document.getElementById('monthlyExpenseBreakdown').innerHTML = Object.keys(expenseByCategory).length > 0
+                ? Object.entries(expenseByCategory).map(([cat, amount]) => `
+                    <div class="report-item">
+                        <span class="report-label">${categoryLabels[cat]}</span>
+                        <span class="report-value">${formatAmount(amount)}</span>
+                    </div>
+                `).join('') + `
+                    <div class="report-total">
+                        <strong>Total Dépenses:</strong>
+                        <span class="amount" style="color: var(--color-danger);">${formatAmount(totalExpense)}</span>
+                    </div>
+                `
+                : '<div class="empty-state"><p>Aucune dépense</p></div>';
+
+            const sortedDays = Object.keys(dailyTotals).sort();
+            document.getElementById('dailyEvolution').innerHTML = sortedDays.length > 0
+                ? sortedDays.map(date => {
+                    const day = dailyTotals[date];
+                    const net = day.revenue - day.expense;
+                    return `
+                        <div class="report-item">
+                            <span class="report-label">${formatDateFull(date)}</span>
+                            <span class="report-value" style="color: ${net >= 0 ? 'var(--color-success)' : 'var(--color-danger)'};">
+                                ${formatAmount(net)}
+                            </span>
+                        </div>
+                    `;
+                }).join('')
+                : '<div class="empty-state"><p>Aucune transaction</p></div>';
+        }
+
+        document.getElementById('exportMonthlyReport').addEventListener('click', () => {
+            const monthTransactions = transactions.filter(t => t.date.startsWith(selectedMonth));
+            
+            const [year, month] = selectedMonth.split('-');
+            const monthName = new Date(year, month - 1).toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' });
+            
+            let report = `PHARMACIE BEN HAMIDA\nRAPPORT MENSUEL\nMois: ${monthName}\n\n`;
+            report += '='.repeat(50) + '\n\n';
+            
+            const revenueByCategory = {};
+            const expenseByCategory = {};
+            const dailyTotals = {};
+
+            monthTransactions.forEach(t => {
+                if (t.type === 'revenue') {
+                    revenueByCategory[t.category] = (revenueByCategory[t.category] || 0) + t.amount;
+                } else {
+                    expenseByCategory[t.category] = (expenseByCategory[t.category] || 0) + t.amount;
+                }
+
+                if (!dailyTotals[t.date]) {
+                    dailyTotals[t.date] = { revenue: 0, expense: 0 };
+                }
+                if (t.type === 'revenue') {
+                    dailyTotals[t.date].revenue += t.amount;
+                } else {
+                    dailyTotals[t.date].expense += t.amount;
+                }
+            });
+
+            report += 'RECETTES MENSUELLES\n' + '-'.repeat(50) + '\n';
+            if (Object.keys(revenueByCategory).length > 0) {
+                Object.entries(revenueByCategory).forEach(([cat, amount]) => {
+                    report += `${categoryLabels[cat]}: ${formatAmount(amount)}\n`;
+                });
+                const totalRev = Object.values(revenueByCategory).reduce((a, b) => a + b, 0);
+                report += `\nTOTAL RECETTES: ${formatAmount(totalRev)}\n\n`;
+            } else {
+                report += 'Aucune recette\n\n';
+            }
+
+            report += 'DÉPENSES MENSUELLES\n' + '-'.repeat(50) + '\n';
+            if (Object.keys(expenseByCategory).length > 0) {
+                Object.entries(expenseByCategory).forEach(([cat, amount]) => {
+                    report += `${categoryLabels[cat]}: ${formatAmount(amount)}\n`;
+                });
+                const totalExp = Object.values(expenseByCategory).reduce((a, b) => a + b, 0);
+                report += `\nTOTAL DÉPENSES: ${formatAmount(totalExp)}\n\n`;
+            } else {
+                report += 'Aucune dépense\n\n';
+            }
+
+            report += 'ÉVOLUTION JOURNALIÈRE\n' + '-'.repeat(50) + '\n';
+            const sortedDays = Object.keys(dailyTotals).sort();
+            sortedDays.forEach(date => {
+                const day = dailyTotals[date];
+                const net = day.revenue - day.expense;
+                report += `${formatDateFull(date)}: ${formatAmount(net)}\n`;
+            });
+
+            const totalRevenue = Object.values(revenueByCategory).reduce((a, b) => a + b, 0);
+            const totalExpense = Object.values(expenseByCategory).reduce((a, b) => a + b, 0);
+            const net = totalRevenue - totalExpense;
+
+            report += '\n' + '='.repeat(50) + '\n';
+            report += `RÉSULTAT NET DU MOIS: ${formatAmount(net)}\n`;
+            report += '='.repeat(50) + '\n';
+
+            const blob = new Blob([report], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Rapport_Mensuel_${selectedMonth}_Pharmacie_Ben_Hamida.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+
+        function formatAmount(amount) {
+            return new Intl.NumberFormat('fr-DZ', {
+                style: 'currency',
+                currency: 'DZD',
+                minimumFractionDigits: 2
+            }).format(amount).replace('DZD', 'DA');
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleString('fr-FR', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        function formatDateFull(dateString) {
+            const date = new Date(dateString + 'T00:00:00');
+            return date.toLocaleDateString('fr-FR', {
+                weekday: 'long',
+                day: '2-digit',
+                month: 'long',
+                year: 'numeric'
+            });
+        }
+
+        updateDisplay();
+
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Service Worker enregistré'))
+                    .catch(err => console.log('Erreur Service Worker:', err));
+            });
+        }
+    </script>
+</body>
+</html>
+
