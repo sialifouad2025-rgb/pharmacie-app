@@ -1,55 +1,43 @@
 {
   "name": "Pharmacie Ben Hamida - Gestion Financière",
   "short_name": "Pharmacie BH",
-  "description": "Application de gestion financière quotidienne pour Pharmacie Ben Hamida",
-  "lang": "fr",
-  "dir": "ltr",
+  "description": "Application de gestion des recettes et dépenses quotidiennes",
 
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "orientation": "portrait",
+  "background_color": "#2563eb",
   "theme_color": "#2563eb",
-  "background_color": "#f8fafc",
+  "orientation": "portrait",
 
-  "categories": ["business", "finance", "productivity"],
+  "categories": ["finance", "business", "productivity"],
+  "lang": "fr-DZ",
+  "dir": "ltr",
 
   "icons": [
     {
-      "src": "android-launchericon-48-48.png",
-      "sizes": "48x48",
-      "type": "image/jpeg",
-      "purpose": "any"
-    },
-    {
-      "src": "android-launchericon-72-72.png",
-      "sizes": "72x72",
-      "type": "image/jpeg",
-      "purpose": "any"
-    },
-    {
-      "src": "android-launchericon-96-96.png",
-      "sizes": "96x96",
-      "type": "image/jpeg",
-      "purpose": "any"
-    },
-    {
-      "src": "android-launchericon-144-144.png",
-      "sizes": "144x144",
-      "type": "image/jpeg",
-      "purpose": "any"
-    },
-    {
-      "src": "android-launchericon-192-192.png",
+      "src": "/icon-192.png",
       "sizes": "192x192",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "android-launchericon-512-512.png",
+      "src": "/icon-512.png",
       "sizes": "512x512",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
