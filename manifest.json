@@ -1,39 +1,55 @@
 {
   "name": "Pharmacie Ben Hamida - Gestion Financière",
   "short_name": "Pharmacie BH",
-  "description": "Application de gestion des recettes et dépenses quotidiennes",
-  "start_url": "/",
-  "scope": "/",
+  "description": "Application de gestion financière quotidienne pour Pharmacie Ben Hamida",
+  "lang": "fr",
+  "dir": "ltr",
+
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#2563eb",
-  "theme_color": "#2563eb",
   "orientation": "portrait",
+  "theme_color": "#2563eb",
+  "background_color": "#f8fafc",
+
+  "categories": ["business", "finance", "productivity"],
+
   "icons": [
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%232563eb' rx='100'/%3E%3Ctext x='256' y='380' font-size='320' text-anchor='middle' fill='white'%3E💊%3C/text%3E%3C/svg%3E",
-      "sizes": "192x192",
-      "type": "image/svg+xml",
+      "src": "android-launchericon-48-48.jpg",
+      "sizes": "48x48",
+      "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%232563eb' rx='100'/%3E%3Ctext x='256' y='380' font-size='280' text-anchor='middle' fill='white'%3E💊%3C/text%3E%3C/svg%3E",
-      "sizes": "192x192",
-      "type": "image/svg+xml",
-      "purpose": "maskable"
-    },
-    {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%232563eb' rx='100'/%3E%3Ctext x='256' y='380' font-size='320' text-anchor='middle' fill='white'%3E💊%3C/text%3E%3C/svg%3E",
-      "sizes": "512x512",
-      "type": "image/svg+xml",
+      "src": "android-launchericon-72-72.jpg",
+      "sizes": "72x72",
+      "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%232563eb' rx='100'/%3E%3Ctext x='256' y='380' font-size='280' text-anchor='middle' fill='white'%3E💊%3C/text%3E%3C/svg%3E",
+      "src": "android-launchericon-96-96.jpg",
+      "sizes": "96x96",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "android-launchericon-144-144.jpg",
+      "sizes": "144x144",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "android-launchericon-192-192.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "android-launchericon-512-512.jpg",
       "sizes": "512x512",
-      "type": "image/svg+xml",
-      "purpose": "maskable"
+      "type": "image/jpeg",
+      "purpose": "any"
     }
-  ],
-  "categories": ["finance", "business", "productivity"],
-  "lang": "fr-DZ"
+  ]
 }
